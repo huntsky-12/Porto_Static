@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devesh | Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-9v+1SU5lDgS/6f0ZOJzI1R5R2WDHyKj0gPq9ry6z2OW6wwmDnxi+kAeyXM+fkmZl0wqkNVYE+yfWZyvW4YeaBQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===================== HEADER / NAV ===================== -->
+    <header class="navbar">
+      <div class="container flex justify-between items-center">
+        <a href="#home" class="logo" aria-label="Homepage">Devesh</a>
+        <nav id="nav-links" class="nav-links flex gap-16">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button
+          id="hamburger"
+          class="hamburger btn btn--secondary hidden"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+      <!-- Hero -->
+      <section
+        id="home"
+        class="section hero flex flex-col items-center justify-center"
+      >
+        <h1 class="hero__title">Hi, I'm Devesh Chaurasiya</h1>
+        <p class="hero__subtitle">Building scalable backend and full-stack solutions</p>
+        <div class="flex gap-16 mt-16">
+          <a
+            href="Devesh_Resume.pdf"
+            class="btn btn--outline"
+            target="_blank"
+            rel="noopener"
+            >Download Resume</a
+          >
+          <a href="#contact" class="btn btn--primary">Contact Me</a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section container">
+        <h2>About</h2>
+        <div class="flex flex-col md:flex-row gap-16 mt-16 items-center">
+          <div
+            class="profile-circle flex items-center justify-center"
+            aria-label="Profile photo placeholder"
+          >
+            DC
+          </div>
+          <p id="about-text" class="about__text"></p>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section container">
+        <h2>Projects</h2>
+        <div id="projects-grid" class="projects-grid mt-16"></div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section container">
+        <h2>Skills</h2>
+        <div id="skills-wrapper" class="skills-wrapper mt-16"></div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section container">
+        <h2>Education</h2>
+        <ul id="edu-list" class="edu-list mt-16"></ul>
+      </section>
+
+      <!-- Achievements -->
+      <section id="achievements" class="section container">
+        <h2>Achievements</h2>
+        <ul id="achievements-list" class="achievements-list mt-16"></ul>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section container">
+        <h2>Contact</h2>
+        <div class="contact-links flex gap-16 mt-16">
+          <a
+            href="mailto:deveshdock@gmail.com"
+            target="_blank"
+            rel="noopener"
+            class="contact-icon"
+            aria-label="Email"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a
+            href="tel:+916394826339"
+            target="_blank"
+            rel="noopener"
+            class="contact-icon"
+            aria-label="Phone"
+            ><i class="fa-solid fa-phone"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/devesh1205"
+            target="_blank"
+            rel="noopener"
+            class="contact-icon"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/huntsky-12"
+            target="_blank"
+            rel="noopener"
+            class="contact-icon"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+
+        <!-- Contact form -->
+        <form id="contact-form" class="contact-form mt-24">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" rows="4" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer py-24">
+      <div class="container flex flex-col items-center gap-16 text-center">
+        <p>&copy; <span id="year"></span> Devesh Chaurasiya</p>
+        <div class="flex gap-16">
+          <a
+            href="https://linkedin.com/in/devesh1205"
+            target="_blank"
+            rel="noopener"
+            class="contact-icon"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/huntsky-12"
+            target="_blank"
+            rel="noopener"
+            class="contact-icon"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast -->
+    <div id="toast" class="toast hidden" role="status" aria-live="polite">
+      Message sent!
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
