@@ -62,12 +62,7 @@
         tech: ["Flask", "SQLite"],
         github_url: "",
       },
-      {
-        name: "Personal Blog Platform",
-        description: "Modular blogging platform with Express and EJS.",
-        tech: ["Node.js", "Express", "EJS", "HTML", "CSS"],
-        github_url: "",
-      },
+     
     ],
   };
 
